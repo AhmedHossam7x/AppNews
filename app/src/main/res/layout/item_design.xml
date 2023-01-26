@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:id="@+id/cardView_item_design">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_title_item_design"
+                android:maxLines="3"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:layout_margin="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_source_item_design"
+                android:maxLines="3"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_margin="5dp"/>
+            <ImageView
+                android:id="@+id/iv_share_head_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_share_24"
+                android:layout_gravity="center"/>
+
+            
+        </LinearLayout>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/iv_image_item_design"
+            android:src="@drawable/not_available"
+            android:scaleType="centerCrop"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

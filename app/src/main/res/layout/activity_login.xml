@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/CIV_login_activity"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/_20sdp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/eT_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        app:endIconMode="clear_text"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_margin="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@id/CIV_login_activity">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/eT_name_login_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/eT_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        app:endIconMode="clear_text"
+        app:passwordToggleEnabled="true"
+        android:layout_margin="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@id/eT_email">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/eT_pass_login_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_login_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20sdp"
+        android:text="Click"
+        android:backgroundTint="#e1395f"
+        app:layout_constraintTop_toBottomOf="@+id/eT_pass"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/btn_login_activity">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don`t Have Any Account"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_signUp_login_activity"
+            android:layout_marginStart="10dp"
+            android:text="Sign Up"
+            android:textColor="#FF0A92FD"
+            android:textSize="@dimen/_17ssp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

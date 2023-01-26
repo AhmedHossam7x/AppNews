@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Register" android:id="@+id/Register"/>
+    <item android:title="Setting" android:id="@+id/setting">
+        <menu>
+            <item android:title="Egypt" android:id="@+id/Eg"/>
+            <item android:title="United States" android:id="@+id/US"/>
+            <item android:title="Russia" android:id="@+id/RS"/>
+            <item android:title="Turkey" android:id="@+id/TR"/>
+            <item android:title="India" android:id="@+id/IN"/>
+        </menu>
+    </item>
+    <item android:title="Logout" android:id="@+id/logout"/>
+</menu>
